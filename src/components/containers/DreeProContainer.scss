@@ -1,0 +1,34 @@
+.dree-pro-container{
+    position: absolute;
+    left:0;
+    top:0;
+    height:auto;
+    min-height:100%;
+    width:50%;
+    max-width:600px;
+    padding:1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color:white;
+    margin-top:96px;
+
+    z-index:3;
+
+    &.loading{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+    .dree-pro-container {
+        border-top-right-radius:25px;
+        border-top-left-radius:25px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        top:unset;
+        width: 100%;
+        height:45%;
+        bottom:0;
+        max-width: none; /* Remove max-width for full-width on smaller screens */
+    }
+}
